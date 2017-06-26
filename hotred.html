@@ -1,0 +1,77 @@
+<html>
+<head>
+	<title>Fire Fire</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<script type="text/javascript" src="js/jquery.min1.10.1.js"></script>
+	<script>
+			
+			$(function(){
+
+				$("#submitbtn").click(function(){
+					if($("#username").val() == ""){
+						alert("username is black");
+						return false;
+					}else{
+						alert("submit");
+					}
+				})
+
+			})
+
+			function checkinputs(){
+				var username = document.reg.username.value;
+				if(username == ""){
+					alert("fill in username");
+					document.reg.username.focus();
+					return false;
+				}
+				return true;
+			}
+
+	</script>
+</head>
+<body>
+	<div id="wrapper" class="wrapper lefttop textred">
+		<header >
+			<div id="logo"><img src="img/logo.jpg" height="100"></div>
+			<nav id="topnav">
+				<ul style="display: inline;">
+					<li>Home</li>
+					<li>About Us</li>
+					<li>Product</li>
+					<li>Contact Us</li>
+					<li>Feedback</li>
+				</ul>
+			</nav>
+		</header>
+		<section>
+			<div id="contentleft">
+				<img src="img/logo.jpg" height="300">
+			</div>
+			<div id="contentright">
+				This is a para content. This is a para content. This is a para content. This is a para content. This is a para content. This is a para content. This is a para content. This is a para content. This is a para content. This is a para content. This is a para content. This is a para content. This is a para content. This is a para content. This is a para content. 
+				<br><br>
+				<form method="get" name="reg">
+					Username: <input type="text" name="username" id="username"><br>
+					Password: <input type="Password" name="password"><br>
+					<b>Gender:</b> <br>
+					Male: <input type="radio" name="gender" value="male"><br>
+					Female: <input type="radio" name="gender" value="female">
+					<br><br>
+					<b>Hobbies</b><br>
+					football<input type="checkbox" value="football" name="hobbie[]"><br>
+					cricket<input type="checkbox" value="cricket" name="hobbie[]"><br>
+					swimming<input type="checkbox" value="swimming" name="hobbie[]"><br>
+					dancing<input type="checkbox" value="dancing" name="hobbie[]"><br>
+					<input type="submit" name="submit" value="Register" id="submitbtn">
+					<!-- onclick="return checkinputs()" -->
+				</form>
+			</div>
+		</section>
+		<div style="clear: both;"></div>
+		<footer >
+			this is footer
+		</footer>
+	</div>
+</body>
+</html>
