@@ -1,1 +1,22 @@
-test
+SQL Queries:
+Select      column_names/*
+From        tablename
+Where       condition(age>23 && city = 'bareilly')
+Group by    column_name
+Having      condition (sum(population) > 10000)
+Order by    column_name
+Limit 10(skip records),20(show records)
+------------------
+INSERT into tablename ('column_names1','column_name2') values ('column_value1','column_name2');
+------------------
+UPDATE city set column_name='column_value', column_name2='column_value2'
+-----------------
+Delete table city where condition( name='ram')
+----------------
+Select count(id), countrycode, sum(population) from city group by countrycode
+----------------
+Q: Total number of city in ind and pak
+A: Select count(id) from city where countrycode in ('ind','pak');
+----------------
+Q: 
+ 
