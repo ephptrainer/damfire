@@ -1,0 +1,1 @@
+Use css file the template named "productbased"
