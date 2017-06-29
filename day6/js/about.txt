@@ -1,0 +1,1 @@
+USE js folder of the template
