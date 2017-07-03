@@ -1,0 +1,1 @@
+save all uploaded files to show on catalog page
